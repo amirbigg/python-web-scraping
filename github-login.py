@@ -15,7 +15,7 @@ for form in content.find_all('form'):
 	for inp in form.select('input[type=hidden]'):
 		data[inp.get('name')] = inp.get('value')
 
-data.update({'login':'amirbig44@gmail.com', 'password':'amirhossein44'})
+data.update({'login':'', 'password':''})
 
 r = session.post(url.format('session'), data=data)
 r = session.get(url.format(username))
